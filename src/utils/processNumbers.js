@@ -2,7 +2,7 @@
 // 구분자 기준으로 분류
 export const seperateNumbers = (restString, seperatorJoinString) => {
   // 빈 string의 경우 빈 배열 return
-  if (restString === "") {
+  if (restString === '') {
     return [];
   }
 
