@@ -1,6 +1,6 @@
-import { Console } from "@woowacourse/mission-utils";
-import processInput from "./utils/processInput.js";
-import { INPUT_NOTICE, OUTPUT_NOTICE } from "./data/constants.js";
+import { Console } from '@woowacourse/mission-utils';
+import processInput from './utils/processInput.js';
+import { INPUT_NOTICE, OUTPUT_NOTICE } from './constants/constant.js';
 
 class App {
   async run() {

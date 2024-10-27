@@ -2,7 +2,7 @@ import {
   END_LETTER,
   REGEX_META_LETTER,
   START_LETTER,
-} from "../data/constants.js";
+} from '../constants/constant.js';
 
 // string => boolean
 // 구분자 지정문이 있는지 확인
@@ -28,11 +28,11 @@ export const seperateSelector = (beginningString) => {
 // 사용할 수 있는 구분자 제공
 export const getSelector = (selectorPart) => {
   // 구분자에 특수한 문자가 있는지 확인
-  let selector = "";
+  let selector = '';
   for (let i = 0; i < selectorPart.length; i++) {
     let selectorLetter = selectorPart[i];
     if (REGEX_META_LETTER.test(selectorLetter)) {
-      selector += "\\";
+      selector += '\\';
     }
     selector += selectorLetter;
   }
