@@ -16,7 +16,7 @@ const processInput = (inputData) => {
   // 구분자 지정문이 있음
   if (isSelectorExisted(inputData)) {
     // 구분자와 숫자배열 분리
-    let [selectorPart, noSelectorPart] = seperateSelector(inputData);
+    const [selectorPart, noSelectorPart] = seperateSelector(inputData);
 
     // 구분자 가공
     const selector = getSelector(selectorPart);
